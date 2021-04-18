@@ -1,0 +1,51 @@
+.c-upload {
+    @include e-card;
+    min-width: 400px;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: spacing("normal") spacing("normal") spacing("wide");
+}
+
+.c-upload__header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.c-upload__label {
+    color: $color-link;
+    font-size: 14px;
+    cursor: pointer;
+    margin-right: auto;
+}
+
+.c-upload__label--remove {
+    display: none;
+    color: $color-red;
+}
+
+
+.c-uploade__body{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.c-upload__image {
+    width: 100%;
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url("../images/upload.svg") no-repeat center;
+    background-size: 150px;
+    margin-bottom: spacing("small");
+
+    img {
+        max-width: 100%;
+        height: auto;
+        display: inline;
+    }
+}

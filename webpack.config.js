@@ -116,5 +116,11 @@ module.exports= {
             template: "./src/components/tabs.html",
             chunks: ['app' ,'assets/js/tabs']
         }),
+
+        new HtmlWebpackPlugin({
+            filename: "components/upload.html",
+            template: "./src/components/upload.html",
+            chunks: ['app']
+        }),
     ]
 }
