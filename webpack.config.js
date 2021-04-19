@@ -8,7 +8,7 @@ module.exports= {
         'app' : './src/index.js',
         'assets/js/banner' : './src/assets/js/banner.js',
         'assets/js/tabs' : './src/assets/js/tabs.js',
-
+        'assets/js/upload' : './src/assets/js/upload.js',
     },
     output: {
         publicPath: '/',
@@ -133,7 +133,7 @@ module.exports= {
         new HtmlWebpackPlugin({
             filename: "components/upload.html",
             template: "./src/components/upload.html",
-            chunks: ['app']
+            chunks: ['app' , 'assets/js/upload' ]
         }),
     ]
 }

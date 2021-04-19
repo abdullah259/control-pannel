@@ -21,7 +21,7 @@
 }
 
 .c-upload__label--remove {
-    //display: none;
+    display: none;
     color: $color-red;
 }
 
@@ -80,6 +80,8 @@
         width: 150px;
         height: 150px;
         overflow: hidden;
+        display: flex;
+        align-items: center;
     }
 
     .c-upload__label {
@@ -88,5 +90,6 @@
 
     .c-upload__label--remove{
         margin-left: inherit;
+        margin-right: 0;
     }
 }
