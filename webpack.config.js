@@ -135,5 +135,35 @@ module.exports= {
             template: "./src/components/upload.html",
             chunks: ['app' , 'assets/js/upload' ]
         }),
+
+        new HtmlWebpackPlugin({
+            filename: "components/help.html",
+            template: "./src/components/help.html",
+            chunks: ['app' , 'assets/js/help' ]
+        }),
+
+        new HtmlWebpackPlugin({
+            filename: "components/summary.html",
+            template: "./src/components/summary.html",
+            chunks: ['app' , 'assets/js/summary' ]
+        }),
+
+        new HtmlWebpackPlugin({
+            filename: "components/actions.html",
+            template: "./src/components/actions.html",
+            chunks: ['app']
+        }),
+
+        new HtmlWebpackPlugin({
+            filename: "components/sidebar.html",
+            template: "./src/components/sidebar.html",
+            chunks: ['app']
+        }),
+
+        new HtmlWebpackPlugin({
+            filename: "components/table.html",
+            template: "./src/components/table.html",
+            chunks: ['app']
+        }),
     ]
 }

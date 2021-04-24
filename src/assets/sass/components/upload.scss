@@ -26,7 +26,7 @@
 }
 
 
-.c-uploade__body{
+.c-upload__body{
     flex-grow: 1;
     display: flex;
     flex-direction: column;
@@ -93,3 +93,18 @@
         margin-right: 0;
     }
 }
+
+//state 
+.has-image.c-upload {
+    .c-upload__label--remove{
+        display: block;
+    }
+
+    .c-upload__image{
+        background: none;
+        img {
+            display: block;
+        }
+    }
+}
+

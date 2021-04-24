@@ -14,5 +14,12 @@
             placeholder.src=reader.result;
         }
     })
+
+    remove.addEventListener("click",e => {
+        upload.value = null;
+        uploader.classList.remove("has-image");
+        placeholder.src="";
     })
+
+    });
 })();
